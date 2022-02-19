@@ -1,0 +1,108 @@
+:root {
+    --soft-blue:hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-M: hsl(217, 54%, 11%);
+    --Very-dark-blue-C: hsl(216, 50%, 16%);
+    --Very-dark-blue-Line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    margin:0;
+    padding:0;
+    background:var(--Very-dark-blue-M) ;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: var(--soft-blue);
+    overflow: visible;
+}
+.container {
+   border:2px solid var();
+   background-color: var(--Very-dark-blue-C);
+   width: 30%;
+   height: 30%;
+   align-items: center;
+   margin: 30%;
+   padding: 3%;
+   border-radius: 15px;
+   position: relative;
+}
+.eq img {
+    width:100%;
+    border-radius: 15px;
+}
+.view {
+    border: 2px solid transparent ;
+    border-radius: 15px;
+    width: 82%;
+    height:49.1%;
+    position: absolute;
+    right:40px;
+    background:transparent;
+    opacity: -1;
+}
+.view img {
+    display: flex;
+    align-items: center;
+    margin: 45%;
+}
+.view:hover {
+   background: var(--Cyan);
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.Equilibrum-text h1{
+    color:var(--White)
+}
+.Equilibrum-text h1:hover {
+    color:var(--Cyan);
+    cursor:pointer
+}
+.Equilibrum-text p {
+    font-size: 20px;
+}
+.eth-div {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--Very-dark-blue-Line)
+}
+.eth-div img {
+    margin-right: 10px;
+}
+.eth {
+    color:var(--Cyan)
+}
+.last-part {
+    display: flex;
+    margin-top: 25px;
+}
+.last-part img {
+    width: 50px;
+    border: 2px solid var(--White);
+    border-radius:27px;
+}
+.last-part p {
+    margin-left:25px;
+    text-align: center;
+}
+.diff {
+    margin-left: 5px;
+    color: var(--White);
+}
+.diff:hover {
+    color:var(--Cyan);
+    cursor: pointer;
+}
+
+@media (max-width: 420px) {
+    .container {
+        width:80%;
+        margin: 7%;
+    }
+    .view {
+        width:92%;
+        right:13px
+    }
+}
